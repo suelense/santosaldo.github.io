@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversão - Santo Saldo</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="/index.html"><img src="img/logo.png" width="80" alt="Logo"></a>
+        <a href="/index.html">Página Inicial</a> |
+        <a href="/dirpf.html">DIRPF 2023</a> |
+        <a href="/servicos.html">Serviços</a> |
+        <a href="/contato.html">Contato</a>
+    </nav>
+    <h1 class="fundoazul"><br>CONVERSÃO DE MOEDA - CARNÊ LEÃO<br><br></h1>
+    <br>
+    <div class="centralizado caixaform">
+        <h4 class="fundolaranja"><br>Informe os dados do rendimentos:<br><br></h4>
+        <form method="post">
+            <label for="data">Data:</label><br>
+            <input type="date" name="data" id="data" placeholder="Data"/>
+            <br><br>
+            <label for="valor">Valor recebido (US$):</Label><br>
+            <input type="number" name="valor"id="valor" placeholder="Valor">
+            <br><br>
+            <input type="submit" value="Calcular" class="botao branco" onclick="conversao">
+            <br><br>
+        </form>
+    </div>
+</body>
+<script src="script.js"></script>
+<footer><br><br>2023 Criado por Suelen Euzébio</footer>
+</html>
