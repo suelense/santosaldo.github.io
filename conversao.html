@@ -16,20 +16,30 @@
         <a href="/servicos.html">Serviços</a> |
         <a href="/contato.html">Contato</a>
     </nav>
-    <h1 class="fundoazul"><br>CONVERSÃO DE MOEDA - CARNÊ LEÃO<br><br></h1>
+    <h1 class="fundoAzulImagem tituloBranco"><br>CARNÊ LEÃO - CONVERSÃO DE MOEDA<br><br></h1>
     <br>
     <div class="centralizado caixaform">
-        <h4 class="fundolaranja"><br>Informe os dados do rendimentos:<br><br></h4>
-        <form method="post">
+        <h4 class="fundolaranja"><br>Informe os dados dos rendimentos:<br><br></h4>
+        <form>
             <label for="data">Data:</label><br>
             <input type="date" name="data" id="data" placeholder="Data"/>
             <br><br>
             <label for="valor">Valor recebido (US$):</Label><br>
             <input type="number" name="valor"id="valor" placeholder="Valor">
             <br><br>
-            <input type="submit" value="Calcular" class="botao branco" onclick="conversao">
-            <br><br>
         </form>
+        <button onclick="conversao()" style="margin-bottom: 20px;">Calcular</button>
+        
+        <br><div id="resultado" class="centralizado"></div><br>
+    </div>
+
+    <br>
+    <div>
+        <p class="margem10 justificado">
+            Observações: Os rendimentos ou pagamentos em moeda estrangeira devem ser convertidos em dólares dos Estados Unidos da América, pelo valor fixado pela autoridade monetária do país de origem dos rendimentos, na data do recebimento ou pagamento e, em seguida, em reais, mediante a utilização do valor do dólar fixado pelo Banco Central do Brasil para o último dia útil da primeira quinzena do mês anterior ao do recebimento ou pagamento.<br>
+            Para os rendimentos e o imposto pago, deve ser utilizada a cotação de compra; já para as deduções do imposto, a cotação de venda.<br><br>
+            Base legal: Lei nº 9.250, de 26 de dezembro de 1995, arts. 5º e 6º; e Instrução Normativa RFB nº 1.500, de 29 de outubro de 2014, arts. 28 (§§ 1º e 2º), 53 (§ 1º), 56 (§ 2º) e 65 (§ 2º, inciso II).
+        </p>
     </div>
 </body>
 <script src="script.js"></script>
