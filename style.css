@@ -1,12 +1,12 @@
 body {
     font-family: 'PT Sans', sans-serif;
-    margin: auto;
+    margin-left: 220px;
+    margin-right: 10px;
+    background: #B1C4CE;
 }
 
 nav {
     font-size: 15px;
-    color: rgba(22, 53, 131, 0.928);
-    padding: 5px;
     font-weight: bold;
 }
 
@@ -19,28 +19,13 @@ a:visited{
     color:currentColor;
 }
 
-li {
-    margin: 20px;
-}
-
-hr {
-    size: 10;
-}
-
 .fundoAzulImagem {
     background-image: url(img/banner_azul.jpg);
     background-position: center;
     background-size: cover;
     text-align: center;
     padding: 10px;
-    font-size:40px;
-}
-
-.fundoAzul {
-    background-color:rgba(100, 148, 237, 0.693);
-    color:black;
-    text-align: center;
-    padding: 10px;
+    font-size: 40px;
     border-radius: 15px;
 }
 
@@ -53,41 +38,42 @@ hr {
 }
 
 .descricao {
-    background-image: url(img/banner_onda_laranja.jpg);
-    background-position: center;
-    background-size: cover;
+    background-color: #C4ACB8;
     text-align: center;
-    text-shadow: rgba(22, 53, 131, 0.478) 0.1em 0.1em 0.2em;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 25px;
 }
 
 .titulo {
-    color:rgba(22, 53, 131, 0.928);
+    color:#1C3D7D;
     text-align: center;
-}
-
-.tituloBranco {
-    color: white;
-    text-align: center;
-    text-shadow: 3px 3px black
 }
 
 .container {
     display: flex;
-    padding: 10px;
-    text-align: center;
+    position: relative;
+    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
+    margin: auto;
 }
 
-.legenda{
-    font-size: small;
+.card {
+    color:black;
+    padding: 10px;
+    text-align: center;
+    width: 250px;
+    margin: auto;
 }
 
 .botaolaranja {
-    background:rgba(255,113,45,1);
+    background:#FB742C;
 	border-radius: 10px;
 	border-color: black;
 	height: 50px;
-	width: 100%;
+	width: 80%;
+    font-size: medium;
 }
 
 .botaobranco {
@@ -95,19 +81,8 @@ hr {
 	border-radius: 10px;
 	border-color: black;
 	height: 50px;
-	width: 100%;
-}
-
-.margem10 {
-    margin: 10px;
-}
-
-.justificado {
-    text-align: justify;
-}
-
-.centralizado {
-    text-align: center;
+	width: 80%;
+    font-size: medium;
 }
 
 .caixaform {
@@ -115,6 +90,7 @@ hr {
     width: 500px;
     margin: auto;
     border-radius: 20px;
+    text-align: center;
 }
 
 .grid1 {
@@ -160,9 +136,30 @@ hr {
 }
 .animation {
     animation: fadeInFadeOut 5s linear infinite;
+    text-align: center;
 }
 @keyframes fadeInFadeOut {
     0% {scale: 1.2}
     50% {scale: 1.5}
     100% {scale: 1.2}
+}
+
+#sidebar {
+    position: fixed;
+    left: 250px;
+    width: 250px;
+    height: 100%;
+    margin-left: -250px;
+    color: black;
+    font-size: 25px;
+  }
+  
+  #sidebar header {
+    line-height: 60px;
+    text-align: center;
+  }
+
+.imgResponsiva {
+    width: 70%;
+    padding: 10px;
 }
