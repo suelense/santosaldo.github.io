@@ -8,6 +8,20 @@ body {
 nav {
     font-size: 25px;
     font-weight: bold;
+    vertical-align: middle;
+}
+
+nav a {
+}
+
+nav #menu {
+    display:none;
+}
+
+.menuImagem {
+    height: 70px;
+    vertical-align: middle;
+
 }
 
 a{
@@ -70,7 +84,8 @@ a:visited{
     width: 250px;
     height: 350px;
     margin: 5%;
-
+    border-radius: 15px;
+    overflow: hidden;
 }
 
 .botaolaranja {
@@ -82,6 +97,10 @@ a:visited{
     font-size: medium;
 }
 
+.botaolaranja:hover {
+    opacity: 0.5;
+}
+
 .botaobranco {
     background:white;
 	border-radius: 10px;
@@ -89,6 +108,10 @@ a:visited{
 	height: 50px;
 	width: 80%;
     font-size: medium;
+}
+
+.botaobranco:hover {
+    opacity: 0.5;
 }
 
 .caixaform {
@@ -158,4 +181,13 @@ a:visited{
 .imgResponsivaCard {
     width: 100%;
     height: 150px;
+}
+
+.justificado {
+    text-align: justify;   
+}
+
+.texto {
+    padding: 70px;
+    font-size:x-large;
 }
