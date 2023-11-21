@@ -23,6 +23,10 @@ a{
     vertical-align: middle;
 }
 
+img {
+    vertical-align: middle;
+}
+
 a:visited{
     color:currentColor;
 }
