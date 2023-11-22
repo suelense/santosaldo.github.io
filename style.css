@@ -130,7 +130,7 @@ li {
 
 .caixaform {
     background-color: darksalmon;
-    width: auto;
+    width: 60%;
     margin: auto;
     border-radius: 20px;
     text-align: center;
@@ -225,10 +225,27 @@ li {
 @media (max-width: 480px),
 (max-width: 320px) {
     nav {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     li {
         font-size: 15px;
+    }
+
+    .bannerTitulo {
+        font-size: 25px;
+    }
+
+    .descricao {
+        font-size: 20px;
+    }
+
+    .caixaform {
+        width: 90%;
+    }
+
+    .texto {
+        padding: 5%;
+        font-size: large;
     }
 }
