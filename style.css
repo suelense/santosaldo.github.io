@@ -182,6 +182,7 @@ li {
 .animation {
     animation: fadeInFadeOut 5s linear infinite;
     text-align: center;
+    width: 100%;
 }
 
 @keyframes fadeInFadeOut {
