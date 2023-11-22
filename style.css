@@ -217,7 +217,7 @@ li {
     font-size: x-large;
 }
 
-@media (max-width: 480px) {
+@media (min-width: 480px) {
     nav {
         font-size: 16px;
     }
