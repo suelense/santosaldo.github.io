@@ -180,10 +180,11 @@ li {
 }
 
 .destaque {
-    width:50%;
+    width: 50%;
     text-align: center;
     margin: auto;
 }
+
 .animation {
     animation: fadeInFadeOut 5s linear infinite;
 }
