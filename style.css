@@ -179,7 +179,7 @@ li {
     object-fit: cover;
 }
 
-.animation {
+.animaton {
     animation: fadeInFadeOut 5s linear infinite;
     text-align: center;
 }
