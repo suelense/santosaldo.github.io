@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,25 +9,27 @@
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <nav>
-        <div>
-            <a href="/index.html"><img src="img/logo.png" width="100"></a>
+        <a href="javascript:void(0);" onclick="menu()"><img src="img/menu.png" height="70px"></a>
+        <div id="menu">
             <a href="/index.html">Página Inicial |</a>
             <a href="/servicos.html">Serviços |</a>
             <a href="/contato.html">Contato</a>
         </div>
+        <a href="index.html"><img src="img/logo.png" height="70px"></a>
     </nav>
     <h1 class="bannerTitulo"><br>SERVIÇOS<br><br></h1>
     <br>
     <div class="container">
         <div class="justificado">
-            <li>Entrega de Declaração de imposto de renda de pessoa física;</li>
-            <li>Cálculo do imposto de renda sobre investimentos em renda variável;</li>
-            <li>Cálculo de imposto sobre renda provenientes do exterior;</li>
-            <li>Preenchimento do Carnê leão;</li>
+            <li>Declaração de IR de Pessoa Física;</li>
+            <li>Cálculo do IR sobre investimentos em renda variável;</li>
+            <li>Cálculo de Imposto sobre Renda provenientes do exterior;</li>
+            <li>Preenchimento do Carnê-Leão;</li>
             <li>Emissão de DARF;</li>
-            <li>Verificação de irregularidades no CPF junto à Receita Federal;</li>
+            <li>Irregularidades no CPF junto à Receita Federal;</li>
             <li>Verificação de débitos junto à Receita Federal;</li>
             <li>Cadastro do INSS e emissão de guias.</li>
             <br><br>
@@ -51,5 +54,16 @@
         </div>
     </div>
 </body>
+<script>
+    function menu() {
+        var x = document.getElementById("menu");
+        if (x.style.display === "none") {
+            x.style.display = "inline-block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+</script>
 <footer><br><br>2023 Criado por Suelen Euzébio</footer>
+
 </html>

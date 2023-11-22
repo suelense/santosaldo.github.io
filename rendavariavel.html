@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,18 +8,64 @@
     <title>Contato - Santo Saldo</title>
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <link rel="stylesheet" href="style.css">
-
 </head>
+
 <body>
     <nav>
-        <div>
-            <a href="/index.html"><img src="img/logo.png" width="100"></a>
+        <a href="javascript:void(0);" onclick="menu()"><img src="img/menu.png" height="70px"></a>
+        <div id="menu">
             <a href="/index.html">Página Inicial |</a>
             <a href="/servicos.html">Serviços |</a>
             <a href="/contato.html">Contato</a>
         </div>
+        <a href="index.html"><img src="img/logo.png" height="70px"></a>
     </nav>
     <h1 class="bannerTitulo"><br>IR sobre renda variável<br><br></h1>
+    <div class="justificado texto">
+        <h4>Informações importantes</h4>
+        <p>O Imposto de Renda em ações é retido parcialmente na fonte e cabe ao investidor entender a tributação,
+            declarar e pagar o que deve.</p>
+        <p>A alíquota do Imposto de Renda em ações varia de 15% a 20%, mas há casos que são isentos.</p>
+        <h4>Tem Imposto de Renda em ações?</h4>
+        <p>Sim, as ações sofrem incidência de Imposto de Renda.</p>
+        <p>Pode ser necessário apurar o IR todos os meses, dependendo das operações que realizar. E, quando houver
+            necessidade de pagamento de IR, você fica obrigado a realizar o pagamento até o fim do mês seguinte.</p>
+        <p>Quem não vende os papéis, por exemplo, e apenas acumula com foco no longo prazo, não tem custos com Imposto
+            de Renda nas ações até efetivamente realizar alguma venda.</p>
+        <p>Além disso, o imposto incide apenas para quem vende ações com valor superior a R$ 20 mil mensais em operações
+            comuns. Já para operações de day trade não há essa isenção.</p>
+        <h3>Qual é a alíquota de Imposto de Renda em ações?</h3>
+        <p>Há três casos possíveis para o Imposto de Renda em ações: isenção, alíquota de 15% e alíquota de 20%. Entenda
+            cada um deles separadamente.</p>
+        <h4>Isenção</h4>
+        <p>Fica isento do Imposto de Renda em ações quem vende ações no valor limite de R$ 20 mil dentro de um mês,
+            independentemente do lucro das operações, desde que sejam vendas comuns de ações, como swing trade – quando
+            você compra a ação em um dia e vende no outro.</p>
+        <h4>Swing trade</h4>
+        <p>Para operações de swing trade que excederem o limite de vendas de R$ 20 mil dentro de um mês, a alíquota do
+            Imposto de Renda sobre os lucros é de 15%.</p>
+        <p>Sempre que você vender quantias acima desse montante, será retido um imposto na fonte no valor simbólico de
+            0,005%. Na prática, esse valor só serve como uma referência para que a Receita Federal saiba que você está
+            negociando valores cujos lucros devem ser tributados posteriormente.</p>
+        <h4>Day trade</h4>
+        <p>No day trade, quando você compra e vende ações no mesmo dia, as alíquotas crescem.</p>
+        <p>O Imposto de Renda retido na fonte pula para 1% (nesse caso, a alíquota é aplicada sobre o lucro) sempre que
+            houver lucro, enquanto a alíquota salta de 15% para 20% sobre os lucros das operações.</p>
+        <h3>Como pagar Imposto de Renda em ações</h3>
+        <p>Para pagar o Imposto de Renda em ações, você precisa emitir uma DARF.O código para emitir a DARF é 6015.</p>
+    </div>
+    <p>Fonte: https://www.onze.com.br/blog/imposto-de-renda-acoes/</p>
 </body>
+<script>
+    function menu() {
+        var x = document.getElementById("menu");
+        if (x.style.display === "none") {
+            x.style.display = "inline-block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+</script>
 <footer><br><br>2023 Criado por Suelen Euzébio</footer>
+
 </html>

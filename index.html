@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <nav>
         <a href="javascript:void(0);" onclick="menu()"><img src="img/menu.png" height="70px"></a>
@@ -16,7 +18,7 @@
             <a href="/servicos.html">Serviços |</a>
             <a href="/contato.html">Contato</a>
         </div>
-        <img src="img/logo.png" height="70px">
+        <a href="index.html"><img src="img/logo.png" height="70px"></a>
     </nav>
     <h1 class="bannerTitulo">
         <a href="/index.html"><img src="img/logo.png" width="30%"></a>
@@ -44,12 +46,13 @@
                 <img class="imgResponsivaCard" src="img/moedas.jpg" alt="Foto de cédulas de dólares e euros"><br>
                 <h1 class="titulo">CARNÊ-LEÂO</h1>
                 <p>Possui renda do exterior?<br>
-                    Veja como calcular o IR.<br><br>
+                    Veja como informar o IR.<br><br>
                     <button class="botaolaranja"><a href="exterior.html">Clique aqui</a></button>
                 </p>
             </div>
             <div class="card fundoVerde">
-                <img class="imgResponsivaCard" src="img/investimentos.jpg" alt="Gráfico de barras com dois bonecos em cima"><br>
+                <img class="imgResponsivaCard" src="img/investimentos.jpg"
+                    alt="Gráfico de barras com dois bonecos em cima"><br>
                 <h1 class="titulo">INVESTIDOR</h1>
                 <p>Veja como calcular IR sobre investimentos em renda variável</p>
                 <button class="botaolaranja"><a href="rendavariavel.html">Clique aqui</a></button>
@@ -64,20 +67,24 @@
         </div>
         <div>
             <p>Atendemos em todo Brasil</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d63212736.409185514!2d-51.633659!3d-14.757802!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9c59c7ebcc28cf%3A0x295a1506f2293e63!2sBrasil!5e0!3m2!1spt-BR!2sus!4v1680215855381!5m2!1spt-BR!2sus" class="imgResponsiva" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <br>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d63212736.409185514!2d-51.633659!3d-14.757802!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9c59c7ebcc28cf%3A0x295a1506f2293e63!2sBrasil!5e0!3m2!1spt-BR!2sus!4v1680215855381!5m2!1spt-BR!2sus"
+                class="imgResponsiva" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <br>
         </div>
     </div>
 </body>
 <script>
     function menu() {
-    var x = document.getElementById("menu");
-    if (x.style.display === "none") {
-      x.style.display = "inline-block";
-    } else {
-      x.style.display = "none";
+        var x = document.getElementById("menu");
+        if (x.style.display === "none") {
+            x.style.display = "inline-block";
+        } else {
+            x.style.display = "none";
+        }
     }
-}
 </script>
 <footer><br><br>2023 Criado por Suelen Euzébio</footer>
+
 </html>

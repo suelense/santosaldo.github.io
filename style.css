@@ -10,14 +10,11 @@ nav {
     font-weight: bold;
 }
 
-nav a {
-}
-
 nav #menu {
-    display:none;
+    display: none;
 }
 
-a{
+a {
     text-decoration: none;
     vertical-align: middle;
 }
@@ -26,8 +23,27 @@ img {
     vertical-align: middle;
 }
 
-a:visited{
-    color:currentColor;
+a:visited {
+    color: currentColor;
+}
+
+input {
+    height: 30px;
+    width: 300px;
+}
+
+textarea {
+    height: 100px;
+    width: 300px;
+}
+
+li {
+    font-size: 25px;
+    padding: 8px;
+}
+
+.botaoContato {
+    width: 100px;
 }
 
 .bannerTitulo {
@@ -43,16 +59,17 @@ a:visited{
 }
 
 .fundoLaranja {
-    background-color:#ff712d;
+    background-color: #ff712d;
     text-align: center;
     padding: 10px;
     border-radius: 15px;
-    font-size:larger;
+    font-size: larger;
 }
 
 .fundoVerde {
     background-color: #00995f;
 }
+
 .descricao {
     background-color: #C4ACB8;
     text-align: center;
@@ -62,7 +79,7 @@ a:visited{
 }
 
 .titulo {
-    color:#1C3D7D;
+    color: #1C3D7D;
     text-align: center;
 }
 
@@ -76,7 +93,7 @@ a:visited{
 }
 
 .card {
-    color:black;
+    color: black;
     text-align: center;
     width: 250px;
     height: 350px;
@@ -86,11 +103,11 @@ a:visited{
 }
 
 .botaolaranja {
-    background:#FB742C;
-	border-radius: 10px;
-	border-color: black;
-	height: 50px;
-	width: 80%;
+    background: #FB742C;
+    border-radius: 10px;
+    border-color: black;
+    height: 50px;
+    width: 80%;
     font-size: medium;
 }
 
@@ -99,11 +116,11 @@ a:visited{
 }
 
 .botaobranco {
-    background:white;
-	border-radius: 10px;
-	border-color: black;
-	height: 50px;
-	width: 80%;
+    background: white;
+    border-radius: 10px;
+    border-color: black;
+    height: 50px;
+    width: 80%;
     font-size: medium;
 }
 
@@ -148,6 +165,7 @@ a:visited{
 
 .divgrid {
     width: 400px;
+    padding: 10px;
 }
 
 .item {
@@ -156,18 +174,28 @@ a:visited{
 }
 
 .imagemgrid {
-    width:100%;
-    height:100%;
-    object-fit:cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
+
 .animation {
     animation: fadeInFadeOut 5s linear infinite;
     text-align: center;
 }
+
 @keyframes fadeInFadeOut {
-    0% {scale: 1.2}
-    50% {scale: 1.5}
-    100% {scale: 1.2}
+    0% {
+        scale: 1.2
+    }
+
+    50% {
+        scale: 1.5
+    }
+
+    100% {
+        scale: 1.2
+    }
 }
 
 .imgResponsiva {
@@ -181,10 +209,16 @@ a:visited{
 }
 
 .justificado {
-    text-align: justify;   
+    text-align: justify;
 }
 
 .texto {
     padding: 70px;
-    font-size:x-large;
+    font-size: x-large;
+}
+
+@media (max-width: 480px) {
+    nav {
+        font-size: 16px;
+    }
 }

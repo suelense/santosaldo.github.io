@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,24 +10,26 @@
     <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
     <nav>
-        <div>
-            <a href="/index.html"><img src="img/logo.png" width="100"></a>
+        <a href="javascript:void(0);" onclick="menu()"><img src="img/menu.png" height="70px"></a>
+        <div id="menu">
             <a href="/index.html">Página Inicial |</a>
             <a href="/servicos.html">Serviços |</a>
             <a href="/contato.html">Contato</a>
         </div>
+        <a href="index.html"><img src="img/logo.png" height="70px"></a>
     </nav>
     <h1 class="bannerTitulo"><br>CONTATO<br><br></h1>
     <div class="centralizado caixaform">
         <h4 class="fundolaranja"><br>Envie sua mensagem, responderemos em breve!<br><br></h4>
         <form method="post" id="message">
             <label for="name">Nome:</label><br>
-            <input type="text" name="name" id="name" placeholder="Nome"/>
+            <input type="text" name="name" id="name" placeholder="Nome" />
             <br><br>
             <label for="mail">E-mail:</Label><br>
-            <input type="email" name="mail"id="mail" placeholder="E-mail">
+            <input type="email" name="mail" id="mail" placeholder="E-mail">
             <br><br>
             <label for="phone">Telefone:</label><br>
             <input type="tel" name="phone" id="phone" placeholder="Número de telefone">
@@ -34,10 +37,25 @@
             <label for="text">Mensagem:</label><br>
             <textarea id="text" placeholder="Escreva aqui sua mensagem"></textarea>
             <br><br>
-            <input type="submit"value="Enviar">
-            <input type="reset" value="Apagar"><br><br>
+            <input class="botaoContato" type="submit" value="Enviar" onclick="mensagemContato()">
+            <input class="botaoContato" type="reset" value="Apagar"><br><br>
         </form>
     </div>
 </body>
+<script>
+    function mensagemContato() {
+        alert("Mensagem enviada com sucesso")
+    }
+
+    function menu() {
+        var x = document.getElementById("menu");
+        if (x.style.display === "none") {
+            x.style.display = "inline-block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+</script>
 <footer><br><br>2023 Criado por Suelen Euzébio</footer>
+
 </html>
