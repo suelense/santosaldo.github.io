@@ -24,7 +24,7 @@
     <h1 class="bannerTitulo"><br>CONTATO<br><br></h1>
     <div class="centralizado caixaform">
         <h4><br>Envie sua mensagem, responderemos em breve!<br><br></h4>
-        <form method="post" id="message">
+        <form method="get" id="message">
             <label for="name">Nome:</label><br>
             <input type="text" name="name" id="name" placeholder="Nome" />
             <br><br>
@@ -57,14 +57,8 @@
         var email = document.getElementById("mail").value;
         var telefone = document.getElementById("phone").value;
         var mensagem = document.getElementById("text").value;
-        if (nome === '') {
-            alert("Preencha todos os campos");
-            return false;
-        };
         var url = "https://docs.google.com/forms/d/e/1FAIpQLSfrf0TaazJgTodQRRGal3eMcd7ayu0GCZ3Rv0EqXHV7q4tv-w/formResponse?usp=pp_url&entry.67874163="+nome+"&entry.1400403783="+email+".com&entry.1560617271="+telefone+"&entry.2146183886="+mensagem;
         var win = window.open(url, '_blank');
-        
-        
     }
 </script>
 <footer><br><br>2023 Criado por Suelen Euzébio</footer>
