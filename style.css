@@ -29,12 +29,12 @@ a:visited {
 
 input {
     height: 30px;
-    width: 300px;
+    width: 80%;
 }
 
 textarea {
     height: 100px;
-    width: 300px;
+    width: 80%;
 }
 
 li {
@@ -130,7 +130,7 @@ li {
 
 .caixaform {
     background-color: darksalmon;
-    width: 500px;
+    width: auto;
     margin: auto;
     border-radius: 20px;
     text-align: center;
@@ -213,12 +213,16 @@ li {
 }
 
 .texto {
-    padding: 70px;
+    padding: 5%;
     font-size: x-large;
 }
 
-@media (min-width: 480px) {
+@media (max-width: 480px), (max-width: 320px) {
     nav {
-        font-size: 16px;
+        font-size: 14px;
+    }
+
+    li {
+        font-size: 15px;
     }
 }
