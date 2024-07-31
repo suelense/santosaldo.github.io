@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversão de Moedas - Santo Saldo</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body onload="menu()">
+    <nav id="menu"></nav>
+    <h1 class="bannerTitulo"><br>CONVERSÃO DE MOEDAS - CARNÊ-LEÃO<br><br></h1>
+    <div class=" caixaform">
+        <h4>Preencha os dados abaixo:</h4>
+        <p>Observação: Dados a partir de 01/02/2020</p>
+        <br><br>
+        <form method="get" id="conversao">
+            <label>Data: </label>
+            <input type="date" id="data">
+            <br><br>
+            <label>Moeda: </label>
+            <select id="moeda">
+                <option value="DOLAR">DOLAR</option>
+                <option value="EURO">EURO</option>
+            </select>
+            <br><br>
+            <label>Valor: </Label>
+            <input type="number" id="valor" placeholder="valor">
+            <br><br>
+            <input class="botaoContato" type="button" value="Converter" onclick="converter()">
+            <input class="botaoContato" type="reset" value="Apagar"><br><br>
+            <div class="dados-conversao" id="dados-conversao">
+            </div>
+        </form>
+    </div>
+</body>
+<script src="script.js"></script>
+<footer><br><br>2023 Criado por Suelen Euzébio</footer>
+
+</html>

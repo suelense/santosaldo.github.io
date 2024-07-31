@@ -10,16 +10,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <nav>
-        <a href="javascript:void(0);" onclick="menu()"><img src="img/menu.png" height="70px"></a>
-        <div id="menu">
-            <a href="/index.html">Página Inicial |</a>
-            <a href="/servicos.html">Serviços |</a>
-            <a href="/contato.html">Contato</a>
-        </div>
-        <a href="index.html"><img src="img/logo.png" height="70px"></a>
-    </nav>
+<body onload="menu()">
+    <nav id="menu"></nav>
     <h1 class="bannerTitulo"><br>SERVIÇOS<br><br></h1>
     <br>
     <div class="container">
@@ -54,16 +46,7 @@
         </div>
     </div>
 </body>
-<script>
-    function menu() {
-        var x = document.getElementById("menu");
-        if (x.style.display === "none") {
-            x.style.display = "inline-block";
-        } else {
-            x.style.display = "none";
-        }
-    }
-</script>
+<script src="script.js"></script>
 <footer><br><br>2023 Criado por Suelen Euzébio</footer>
 
 </html>

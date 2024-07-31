@@ -1,16 +1,18 @@
 body {
     font-family: 'PT Sans', sans-serif;
-    margin: auto;
-    background: #B1C4CE;
+    margin: 2%;
     padding: 10px;
 }
 
 nav {
     font-size: 25px;
     font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav #menu {
+.menuList {
     display: none;
 }
 
@@ -27,7 +29,7 @@ a:visited {
     color: currentColor;
 }
 
-input {
+input, select {
     height: 30px;
     width: 80%;
 }
@@ -48,12 +50,12 @@ li {
 
 .bannerTitulo {
     background-image: url(img/banner_azul.jpg);
-    background-position: center;
+    background-position: center left;
     background-size: cover;
     text-align: center;
     padding: 10px;
     font-size: 40px;
-    border-radius: 15px;
+    border-radius: 10px;
     border: 8px solid;
     color: #1C3D7D;
 }
@@ -62,18 +64,18 @@ li {
     background-color: #ff712d;
     text-align: center;
     padding: 10px;
-    border-radius: 15px;
+    border-radius: 10px;
     font-size: larger;
 }
 
-.fundoVerde {
-    background-color: #00995f;
+.fundoVerde,
+.descricao {
+    background-color: #70E6B2;
 }
 
 .descricao {
-    background-color: #C4ACB8;
     text-align: center;
-    border-radius: 15px;
+    border-radius: 10px;
     padding: 10px;
     font-size: 25px;
 }
@@ -88,24 +90,25 @@ li {
     position: relative;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     margin: auto;
 }
 
 .card {
-    color: black;
+    color: #1C3D7D;
     text-align: center;
     width: 250px;
     height: 350px;
     margin: 5%;
-    border-radius: 15px;
+    border-radius: 10px;
+    box-shadow: 0 1px 4px #1C3D7D;
     overflow: hidden;
 }
 
 .botaolaranja {
     background: #FB742C;
     border-radius: 10px;
-    border-color: black;
+    border-color: #1C3D7D;
     height: 50px;
     width: 80%;
     font-size: medium;
@@ -118,7 +121,7 @@ li {
 .botaobranco {
     background: white;
     border-radius: 10px;
-    border-color: black;
+    border-color: #1C3D7D;
     height: 50px;
     width: 80%;
     font-size: medium;
@@ -131,6 +134,7 @@ li {
 .caixaform {
     background-color: darksalmon;
     width: 60%;
+    padding: 1%;
     margin: auto;
     border-radius: 20px;
     text-align: center;
